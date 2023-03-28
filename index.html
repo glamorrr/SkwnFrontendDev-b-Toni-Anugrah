@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Finance App</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <div class="max-w-[375px] bg-gray-50 mx-auto px-4 pt-12 pb-24 text-gray-600 relative">
+      <nav
+        class="fixed flex justify-between items-center bg-white px-10 py-5 bottom-0 mx-auto w-[375px] -ml-4 shadow-inner border-t border-gray-200"
+      >
+        <div class="text-blue-500 flex flex-col items-center justify-center">
+          <div class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
+              />
+              <path
+                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
+              />
+            </svg>
+          </div>
+          <div class="w-1 h-1 bg-blue-500 mt-1 rounded-full"></div>
+        </div>
+        <div class="w-6 h-6 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="w-6 h-6 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="w-6 h-6 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              fill-rule="evenodd"
+              d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </nav>
+      <header class="flex justify-between items-center">
+        <p class="text-sm">
+          Hello, <span class="block text-gray-900 font-bold text-xl">Aurellia!</span>
+        </p>
+        <img
+          class="w-12 object-cover h-12 rounded-full"
+          src="assets/woman-pp.jpg"
+          alt="aurellia profile picture"
+        />
+      </header>
+      <section class="mt-8">
+        <header class="flex items-center justify-between">
+          <h2 class="font-semibold text-lg">Your Visa</h2>
+          <a href="#" class="text-sm hover:underline">See all</a>
+        </header>
+        <div class="mt-2 flex space-x-4 overflow-x-auto">
+          <div
+            class="flex-shrink-0 shadow p-4 text-white rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 w-72"
+          >
+            <header class="flex items-start justify-between">
+              <div class="w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-credit-card"
+                >
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <span class="text-sm font-bold">Premium</span>
+            </header>
+            <p class="mt-8 tracking-wide">4000 5127 2123 2018</p>
+            <footer class="mt-4 flex justify-between items-end">
+              <span class="font-bold">Aurellia</span>
+              <img class="w-10 h-6 object-cover" src="assets/visa-white.png" alt="" />
+            </footer>
+          </div>
+          <div class="shadow p-4 text-gray-600 rounded-lg bg-white w-72 flex-shrink-0">
+            <header class="flex items-start justify-between">
+              <div class="w-8 text-blue-500">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-credit-card"
+                >
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <span class="text-sm font-bold text-blue-500">Premium</span>
+            </header>
+            <p class="mt-8 tracking-wide">4000 5127 2123 2018</p>
+            <footer class="mt-4 flex justify-between items-end">
+              <span class="font-bold">Aurellia</span>
+              <img class="w-10 h-6 object-cover" src="assets/visa-black.png" alt="" />
+            </footer>
+          </div>
+        </div>
+      </section>
+      <section class="mt-8">
+        <header class="flex items-center justify-between">
+          <h2 class="font-semibold text-lg">Services</h2>
+          <a href="#" class="text-sm hover:underline">See all</a>
+        </header>
+        <div class="mt-5 flex justify-between px-4 text-gray-600">
+          <div class="flex flex-col space-y-1 items-center cursor-pointer">
+            <div
+              class="p-2 bg-blue-100 transition-all group-hover:bg-blue-200 rounded-full flex items-center justify-center"
+            >
+              <div class="text-blue-500 w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-credit-card"
+                >
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+            </div>
+            <span class="text-sm font-semibold">Card</span>
+          </div>
+          <a href="/finance.html" class="flex flex-col space-y-1 items-center group cursor-pointer">
+            <div
+              class="p-2 bg-blue-100 rounded-full group-hover:bg-blue-200 transition-all flex items-center justify-center"
+            >
+              <div class="text-blue-500 w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-dollar-sign"
+                >
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+            </div>
+            <span class="text-sm font-semibold">Finance</span>
+          </a>
+          <div class="flex flex-col space-y-1 items-center">
+            <div class="p-2 bg-blue-100 rounded-full flex items-center justify-center">
+              <div class="text-blue-500 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75zM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 01-1.875-1.875V8.625zM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 013 19.875v-6.75z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span class="text-sm font-semibold">Top Up</span>
+          </div>
+          <div class="flex flex-col space-y-1 items-center">
+            <div class="p-2 bg-blue-100 rounded-full flex items-center justify-center">
+              <div class="text-blue-500 w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-help-circle"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+            <span class="text-sm font-semibold">Help</span>
+          </div>
+        </div>
+      </section>
+      <section class="mt-8">
+        <header class="flex items-center justify-between">
+          <h2 class="font-semibold text-lg">Activity</h2>
+          <a href="#" class="text-sm hover:underline">See all</a>
+        </header>
+        <div class="mt-4 flex flex-col space-y-2">
+          <div
+            class="bg-white shadow-sm border rounded-md border-gray-200 p-4 flex space-x-4 items-start"
+          >
+            <div class="p-2.5 bg-blue-100 rounded-full flex items-center justify-center">
+              <div class="text-blue-500 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-gray-900 font-semibold text">Deposit</h3>
+                <span class="text-xs">11 March 2022</span>
+              </div>
+              <p class="text-blue-500 text-sm">Rp15.510.000,-</p>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex space-x-0.5 justify-center items-center">
+                  <div class="text-gray-600 w-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-sm">Bank Mandiri ATM</p>
+                </div>
+                <span class="text-xs">11.21 AM</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-sm border rounded-md border-gray-200 p-4 flex space-x-4 items-start"
+          >
+            <div class="p-2.5 bg-red-100 rounded-full flex items-center justify-center">
+              <div class="text-red-500 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.72 5.47a.75.75 0 011.06 0L9 11.69l3.756-3.756a.75.75 0 01.985-.066 12.698 12.698 0 014.575 6.832l.308 1.149 2.277-3.943a.75.75 0 111.299.75l-3.182 5.51a.75.75 0 01-1.025.275l-5.511-3.181a.75.75 0 01.75-1.3l3.943 2.277-.308-1.149a11.194 11.194 0 00-3.528-5.617l-3.809 3.81a.75.75 0 01-1.06 0L1.72 6.53a.75.75 0 010-1.061z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-gray-900 font-semibold text">Withdraw</h3>
+                <span class="text-xs">11 March 2022</span>
+              </div>
+              <p class="text-red-500 text-sm">Rp15.510.000,-</p>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex space-x-0.5 justify-center items-center">
+                  <div class="text-gray-600 w-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-sm">Bank Mandiri ATM</p>
+                </div>
+                <span class="text-xs">11.21 AM</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-sm border rounded-md border-gray-200 p-4 flex space-x-4 items-start"
+          >
+            <div class="p-2.5 bg-blue-100 rounded-full flex items-center justify-center">
+              <div class="text-blue-500 w-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="w-full">
+              <div class="flex justify-between items-start">
+                <h3 class="text-gray-900 font-semibold text">Deposit</h3>
+                <span class="text-xs">8 March 2022</span>
+              </div>
+              <p class="text-blue-500 text-sm">Rp12.230.000,-</p>
+              <div class="mt-2 flex justify-between items-end">
+                <div class="flex space-x-0.5 justify-center items-center">
+                  <div class="text-gray-600 w-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        fill-rule="evenodd"
+                        d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-sm">Bank Mandiri ATM</p>
+                </div>
+                <span class="text-xs">11.21 AM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
